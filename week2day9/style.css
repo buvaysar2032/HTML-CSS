@@ -1,0 +1,138 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+.container > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    background: rgb(34, 30, 30);
+    color: white;
+}
+
+.menu {
+    grid-column: auto/ span 3;
+    background: rgb(240, 49, 49);
+    color: white;
+}
+
+.hero {
+    grid-column: 1/ span 4;
+    background: rgb(68, 70, 202);
+    color: white;
+}
+
+.main {
+    grid-column: auto/ span 2;
+    grid-row: auto / span 2;
+    background: rgb(74, 74, 100);
+    color: white;
+}
+
+.block {
+    background: white;
+    color: white;
+}
+
+.image {
+    grid-column: 4/ span 1;
+    background: rgb(180, 224, 213);
+    color: white;
+}
+
+.extra {
+    grid-column: 4/ span 1;
+    background: rgb(60, 141, 117);
+    color: white;
+}
+
+.banner {
+    grid-column: auto/ span 4;
+    background: rgb(231, 204, 46);
+    color: white;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 4fr repeat(3, 1fr);
+}
+
+@media screen and (max-width: 968px) {
+    .container {
+        grid-template-rows: 0.5fr 3fr  3fr repeat(2, 1fr);
+    }
+    .header {
+        grid-column: 1/ span 4;
+    }
+    .hero {
+        grid-row: 2/3;
+        background: rgb(68, 70, 202);
+        color: white;
+    }
+    .menu {
+        grid-column: auto/ span 1;
+        grid-row: 3/6;
+    }
+    .main {
+        grid-column: 2/ span 4;
+        grid-row: 3 / span 1;
+    }
+    .banner {
+        grid-column: 2/ span 3;
+        grid-row: 4 / span 1;
+        background: rgb(231, 204, 46);
+        color: white;
+    }
+    .extra {
+        grid-column: 2/ span 2;
+        grid-row: 5 / span 1;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        grid-template-rows: 1fr 1fr  1fr repeat(4, 1fr);
+    }
+
+    .header {
+        grid-column: 1/ span 4;
+
+    }
+    .hero {
+        grid-row: 3/3;
+        background: rgb(68, 70, 202);
+        color: white;
+    }
+    .menu {
+        grid-column: 1/ span 4;
+        grid-row: 2/ span 1;
+    }
+    .main {
+        grid-column: 1/ span 4;
+        grid-row: 4 / span 1;
+    }
+    .banner {
+        grid-column: 1/ span 4;
+        grid-row: 5 / span 1;
+        background: rgb(231, 204, 46);
+        color: white;
+    }
+    .extra {
+        grid-column: 1/ span 4;
+        grid-row: 6 / span 1;
+        color: white;
+    }
+    .image {
+        grid-column: 1/ span 4;
+    }
+}
