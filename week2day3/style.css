@@ -1,0 +1,58 @@
+.font {
+    font-family: Arial;
+}
+
+.paragraph {
+    color: green;
+}
+
+.title {
+    width: 200px;
+    text-align: left;
+}
+
+p {
+    text-align: right;
+    margin: 30px;
+}
+
+.block__one {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.block__two {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+.block__three {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.block__four {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.dest {
+    width: 200px;
+}
+
+.dest__two {
+    width: 400px;
+}
+
+.form__paragraph {
+    text-align: left;
+    margin: 15px 0 0 0;
+}
+
+.area {
+    resize: vertical;
+}
