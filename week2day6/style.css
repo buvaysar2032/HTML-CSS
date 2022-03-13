@@ -1,0 +1,266 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 100px;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    text-align: center;
+    margin: 35px 0;
+}
+
+.anim-block {
+    width: 250px;
+    height: 200px;
+    border-radius: 1em;
+    background-color: #e63946;
+    margin: 25px auto;
+    transition: background-color 1s;
+    cursor: pointer;
+    color: aliceblue;
+    padding: .7em 1em;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.anim-block p {
+    margin: 0;
+    transition: color 1s;
+    transition-delay: 1s;
+}
+
+.anim-block:hover {
+    background-color: #1d3557;
+    color: #e63946;
+}
+
+.growing-block {
+    width: 100px;
+    height: 100px;
+    background-color: #001219;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 3s;
+}
+
+.growing-block:hover {
+    width: 100vw;
+    height: 100vh;
+}
+
+.sticky-block {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    margin: 0 auto;
+    background-color: #e9c46a;
+    position: sticky;
+    top: 50px;
+    z-index: 2;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 10px;
+    background-color: white;
+    width: 200px;
+    margin: 35px auto;
+    z-index: 2;
+}
+
+.paragraph {
+    padding-top: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.monster-input {
+    margin: 0 20px;
+    border-radius: 15px;
+    transition: 3s;
+}
+
+.monster-input:focus {
+    transform: scale(2, 1.5) translateX(200%);
+    margin: 0;
+}
+
+/* progress-bar */
+
+#progress-bar-container {
+    width: 600px;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.progress-bar-child {
+    width: 100%;
+    height: 100%;
+}
+
+.progress {
+    animation-direction: reverse;
+    background: linear-gradient(to right, #e5405e 0%, #ffdb3a 45%, #3fffa2 100%);
+}
+
+.shrinker {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.timelapse {
+    animation-name: timelapse;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.86, .05, .4, .96);
+}
+
+@keyframes timelapse {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+/* airpline */
+
+.container {
+    margin: 75px auto;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    animation: rotating 3.5s linear infinite;
+}
+
+.crazy-plane {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(370deg);
+    }
+}
+
+/* block */
+
+.mode {
+    margin: 0 auto;
+    width: 150px;
+    height: 60px;
+    background-color:cadetblue;
+    animation: check 4s linear;
+    animation-play-state: paused;
+    /* animation-iteration-count: infinite; */
+    border-radius: 15px;
+}
+
+input:checked + .mode {
+    animation-play-state: running;
+}
+
+@keyframes check {
+    from {
+        width: 10 px;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.check {
+    width: 100px;
+    height: 50px;
+}
+
+.lds-ring {
+    display: block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    margin: 6px;
+    border: 6px solid #000;
+    border-radius: 50%;
+    animation: lds-ring /*1.2s*/0.6s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #000 transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: calc(-0.45s / 2);
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: calc(-0.3s / 2);
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: calc(-0.15s / 2);
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.square {
+    margin-left: 100px;
+    background: darkcyan;
+    width: 200px;
+    height: 200px;
+}
+
+.сircle {
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    animation-name: spin-right;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+}
+
+@keyframes spin-right {
+    25% {
+        transform: translate(0,-300px);
+    }
+    50% {
+        transform: translate(300px,-300px);
+    }
+    75% {
+        transform: translate(300px,0);
+    }
+}
