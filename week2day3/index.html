@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">HTML</h1>
+    <p class="paragraph font">
+        HTML (от англ. <i>HyperText Markup Language</i> — «язык гипертекстовой разметки») — стандартизированный язык разметки веб-страниц во Всемирной паутине. Код
+        HTML терпретируется браузерами; полученная в результате интерпретации страница отображается на экране монитора компьютера или мобильного устройства
+    </p>
+    <p class="font">
+        Язык HTML до 5-й версии определялся как приложение SGML (стандартного обобщенного языка разметки по стандарту ISO 8879). Спецификацрси HTMLS
+        формулируются в терминах Doм (объектной модели документа).
+    </p>
+    <p class="font">
+        Строгим вариантом HTML является XHTML, он наследует синтаксис XML и является приложением языка XML в области разметки гипертекста.
+    </p>
+    <p class="font">
+        HTML-страницы, как правило, открываются браузерами обмениваясь с сервером информацией по протоколу HTTP или HTTPS, в виде простого текста или е
+        использованием шифрования.
+    </p>
+    <hr>
+    <h2 class="title font">Общее представление</h2>
+    <p class="font">
+        Изначально язык HTML был задуман и создан как средство структурирования и форматирования документов без их привязки к средствам воспроизведения
+        (отображения). В идеале, текст с разметкой HTML должен был без стилистических и структурных искажений воспроизводиться на оборудовании с различной
+        технической оснащенностьо (цветной экран современного компьютера, монохромный экран органайзера, ограниченный по размерам экран мобильного телефона
+        или устройства и программы голосового воспроизведения текстов). Однако современное применение HTML очень далеко от сго изначальной задачи. Например, тег
+    </p>
+    <p class="font">
+        предназначен для создания в документах таблиц, но иногда используется и для оформления размещения элементов на странице. С течением времени основная идея
+        платформонозависимости языка HTML была принесена в жертву современным потребностям в мультимедийном и графическом оформлении.
+    </p>
+    <div class="block__one">
+        <div class="block__two"></div>
+    </div>
+    <hr>
+    <div class="block__three">
+        <div class="block__four"></div>
+    </div>
+    <hr>
+    <form action="">
+        <fieldset class="dest">
+            <legend>Checkbox</legend>
+            <input type="checkbox">
+            <input type="checkbox" disabled>
+        </fieldset>
+        <fieldset class="dest__two">
+            <legend>File</legend>
+            <input type="file">
+            <input type="file" disabled>
+        </fieldset>
+        <fieldset class="dest__two">
+            <legend>Image</legend>
+            <input type="image">
+            <input type="image" disabled>
+        </fieldset>
+        <fieldset class="dest__two">
+            <legend>Password</legend>
+            <input type="password">
+            <input type="password" disabled>
+        </fieldset>
+        <fieldset class="dest__two">
+            <legend>Text</legend>
+            <input type="text">
+            <input type="text" disabled>
+        </fieldset>
+        <fieldset class="dest__two">
+            <legend>Email</legend>
+            <input type="email">
+            <input type="email" disabled>
+        </fieldset>
+        <fieldset class="dest__two">
+            <legend>Date</legend>
+            <input type="date">
+            <input type="date" disabled>
+        </fieldset>
+    </form>
+    <hr>
+    <button>Кнопка</button>
+    <input type="button" value="Нажми на меня">
+    <form action="">
+        <p class="form__paragraph"><b>Самое глубокое озеро в мире</b></p>
+        <p class="form__paragraph"><input name="lake" type="radio">Танганьика</p>
+        <p class="form__paragraph"><input name="lake" type="radio">Байкал</p>
+        <p class="form__paragraph"><input name="lake" type="radio">Восток</p>
+        <p class="form__paragraph"><input type="submit" value="Выбрать"></p>
+    </form>
+    <hr>
+    <textarea rows="3">Нельзя изменить размеры элемента</textarea>
+    <textarea class="area" rows="3">Можно изменить размеры элемента</textarea>
+    <hr>
+    <select>
+        <option value="1">Синий</option>
+        <option value="2">Зеленый</option>
+        <option value="3">Желтый</option>
+        <option value="4">Красный</option>
+        <option value="5">Оранжевый</option>
+        <option value="6">Черный</option>
+    </select>
+    <hr>
+    <select size="3" multiple>
+        <option value="1">Синий</option>
+        <option value="2">Зеленый</option>
+        <option value="3">Желтый</option>
+        <option value="4">Красный</option>
+        <option value="5">Оранжевый</option>
+        <option value="6">Черный</option>
+    </select>
+    <label><input type="text"> Текст</label>
+    <hr>
+    <form action="">
+        <fieldset class="dest__two">
+            <legend>Форма отправки данных</legend>
+            <input type="email" placeholder="Email" tabindex="3">
+            <br>
+            <input type="password" placeholder="Password" tabindex="2">
+            <br>
+            <input type="submit" tabindex="1">
+        </fieldset>
+    </form>
+
+</body>
+</html>
